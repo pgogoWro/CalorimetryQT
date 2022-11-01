@@ -14,6 +14,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void drawingCurve();
+
+private slots:
+    void on_startDrawing_clicked();
 
 private:
     Ui::MainWindow *ui;

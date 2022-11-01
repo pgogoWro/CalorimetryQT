@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->setInteraction(QCP::iRangeDrag, true);
     ui->plot->setInteraction(QCP::iRangeZoom, true);
     ui->plot->addGraph();
-    ui->plot->graph(0)->setData(dpmcX,dpmcX);
+
     ui->plot->xAxis->setRange(0,10);
     ui->plot->yAxis->setRange(0,10);
 }
@@ -22,5 +22,18 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::drawingCurve()
+{
+    ui->plot->graph(0)->setData(dpmcX,dpmcX);
+    ui->plot->replot();
+    ui->plot->update();
+}
+
+
+void MainWindow::on_startDrawing_clicked()
+{
+    drawingCurve();
 }
 
