@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVector>
+#include "loaddataoflipids.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,6 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void drawingCurve();
+    std::vector<double> dX,dY;//vectors to loading data inside mainwindow class
 
 private slots:
     void on_startDrawing_clicked();
