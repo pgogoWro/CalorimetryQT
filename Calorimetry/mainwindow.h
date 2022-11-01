@@ -17,7 +17,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void drawingCurve();
-    std::vector<double> dX,dY;//vectors to loading data inside mainwindow class
+    QVector<double> dmpcX,dmpcY;//vectors to loading data inside mainwindow class
 
 private slots:
     void on_startDrawing_clicked();

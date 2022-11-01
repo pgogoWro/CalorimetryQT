@@ -15,8 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->setInteraction(QCP::iRangeZoom, true);
     ui->plot->addGraph();
 
-    ui->plot->xAxis->setRange(0,10);
-    ui->plot->yAxis->setRange(0,10);
+    ui->plot->xAxis->setRange(285,315);
+    ui->plot->yAxis->setRange(-20,100);
 }
 
 MainWindow::~MainWindow()
@@ -31,13 +31,10 @@ void MainWindow::drawingCurve()
     x.loadX();
     y.loadY();
 
-    dX = x.getX();
-    dY = y.getY();
+    dmpcX = x.getX();
+    dmpcY = y.getY();
 
-    QVector <double> dpmcX = QVector<double>::fromStdVector(dX);
-    QVector <double> dpmcY = QVector<double>::fromStdVector(dX);
-
-    ui->plot->graph(0)->setData(dpmcX,dpmcY);
+    ui->plot->graph(0)->setData(dmpcX,dmpcY);
     ui->plot->replot();
     ui->plot->update();
 }
