@@ -4,10 +4,13 @@
 #include <fstream>
 #include <QVector>
 #include <QFile>
-#include <QDataStream>
-#include <QIODevice>
-#include <QTextStream>
+#include <QFileDialog>
 #include <QMessageBox>
+#include <QTextStream>
+#include <QIODevice>
+#include <QString>
+
+//Its not working at the moment
 
 class LoadDataOfLipids //class for load a point to vector, loading from txt file
 {

@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <QVector>
-#include "loaddataoflipids.h"
+#include "dataoflipids.h"
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +22,7 @@ public:
 
 private slots:
     void on_startDrawing_clicked();
+
 
 private:
     Ui::MainWindow *ui;

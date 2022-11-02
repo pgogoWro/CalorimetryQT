@@ -1,5 +1,7 @@
 #include "loaddataoflipids.h"
 
+QVector <double> x;
+
 LoadDataOfLipids::LoadDataOfLipids()
 {
 
@@ -7,32 +9,32 @@ LoadDataOfLipids::LoadDataOfLipids()
 
 void LoadDataOfLipids::loadX()
 {
-    QFile file("data.txt");
-    file.open(QIODevice::ReadOnly);
+//    QFile file("data.txt");
+//    file.open(QFile::ReadOnly | QFile::Text);
+//    QTextStream in(&file);
+//    QString value = in.readLine();
+//    x.push_back(value);
 
-        QDataStream in(&file);
+//    if (!file.open(QFile::ReadOnly | QFile::Text){
+//            QMessageBox::warning(this, "title", "No data file");
+//    }
 
-        double tmp;
+//    QTextStream in(&file);
+//    QString value = in.readLine();
+//            while(!line.isNull()){
+//            fileContent.append(line);
+//            line  = in.readLine();
+//            tmp = line;
+//            x.push_back(tmp);
+  //  }
 
-        in  >> tmp;
-        x.push_back(tmp);
 
-    file.close();
+
 }
 
 void LoadDataOfLipids::loadY()
 {
-    QFile file("data2.txt");
-    file.open(QIODevice::ReadOnly);
 
-        QDataStream in(&file);
-
-        double tmp;
-
-        in >> tmp;
-        y.push_back(tmp);
-
-    file.close();
 }
 
 QVector<double> &LoadDataOfLipids::getX()

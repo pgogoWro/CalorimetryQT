@@ -1,9 +1,9 @@
 #include "mainwindow.h"
+#include "qcustomplot.h"
 #include "ui_mainwindow.h"
 
 
-//QVector <double> dpmcX = {1, 2, 3, 4, 5,6,7,8,9,10};// zamienic na qvector moze pomoze bo w projekcie plot tez pojawialo sie w lini z set data "no matching member function for call to setData"
-//QVector <double> dpmcY = {1, 2, 3, 4, 5,6,7,8,9,10};
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,10 +26,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::drawingCurve()
 {
-    LoadDataOfLipids x,y;
+    DataOfLipids x,y;
 
-    x.loadX();
-    y.loadY();
+
 
     dmpcX = x.getX();
     dmpcY = y.getY();
