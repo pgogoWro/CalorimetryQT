@@ -1,6 +1,8 @@
 #ifndef DATAOFLIPIDS_H
 #define DATAOFLIPIDS_H
 #include <QVector>
+#include <QRandomGenerator>
+#include <QList>
 
 class DataOfLipids
 {

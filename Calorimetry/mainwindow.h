@@ -18,11 +18,16 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void drawingCurve();
+    void clearDataCurve();
+    void addDataVector();
     QVector<double> dmpcX,dmpcY;//vectors to loading data inside mainwindow class
 
 private slots:
     void on_startDrawing_clicked();
 
+
+
+    void on_clearCurve_clicked();
 
 private:
     Ui::MainWindow *ui;

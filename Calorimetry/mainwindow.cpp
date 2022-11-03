@@ -19,28 +19,37 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->yAxis->setRange(-20,100);
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow(){
     delete ui;
 }
 
-void MainWindow::drawingCurve()
-{
-    DataOfLipids x,y;
-
-
-
-    dmpcX = x.getX();
-    dmpcY = y.getY();
+void MainWindow::drawingCurve(){
 
     ui->plot->graph(0)->setData(dmpcX,dmpcY);
     ui->plot->replot();
     ui->plot->update();
 }
 
+void MainWindow::clearDataCurve(){
+    dmpcX.clear();
+    dmpcY.clear();
+}
 
-void MainWindow::on_startDrawing_clicked()
-{
+void MainWindow::addDataVector(){
+    DataOfLipids x,y;
+    dmpcX = x.getX();
+    dmpcY = y.getY();
+}
+
+
+void MainWindow::on_startDrawing_clicked(){
+    addDataVector();
+    drawingCurve();
+}
+
+
+void MainWindow::on_clearCurve_clicked(){
+    clearDataCurve();
     drawingCurve();
 }
 

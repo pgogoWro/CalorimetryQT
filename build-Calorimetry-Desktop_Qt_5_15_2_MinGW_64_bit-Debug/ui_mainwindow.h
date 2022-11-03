@@ -26,6 +26,7 @@ public:
     QWidget *centralwidget;
     QPushButton *startDrawing;
     QCustomPlot *plot;
+    QPushButton *clearCurve;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -42,6 +43,9 @@ public:
         plot = new QCustomPlot(centralwidget);
         plot->setObjectName(QString::fromUtf8("plot"));
         plot->setGeometry(QRect(10, 10, 781, 401));
+        clearCurve = new QPushButton(centralwidget);
+        clearCurve->setObjectName(QString::fromUtf8("clearCurve"));
+        clearCurve->setGeometry(QRect(480, 460, 91, 24));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -60,6 +64,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         startDrawing->setText(QCoreApplication::translate("MainWindow", "Draw/Rysuj", nullptr));
+        clearCurve->setText(QCoreApplication::translate("MainWindow", "Clear/Wyczy\305\233\304\207", nullptr));
     } // retranslateUi
 
 };
