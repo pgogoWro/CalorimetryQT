@@ -23,8 +23,8 @@ public:
     void loadX();//methods to loading from file
     void loadY();
 
-    QVector<double>& getX();//methods for getting vectors
-    QVector<double>& getY();
+//    QVector<double>& getX();//methods for getting vectors
+//    QVector<double>& getY();
 };
 
 #endif // LOADDATAOFLIPIDS_H

@@ -16,7 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->addGraph();
 
     ui->plot->xAxis->setRange(285,315);
-    ui->plot->yAxis->setRange(-20,100);
+    ui->plot->yAxis->setRange(-50,200);
 }
 
 MainWindow::~MainWindow(){

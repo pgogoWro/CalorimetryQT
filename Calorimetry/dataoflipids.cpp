@@ -21,11 +21,11 @@ QVector<double> &DataOfLipids::getX()
 //    return tmp;
 //}
 
+
 QVector<double> &DataOfLipids::getY()
 {
-    int index;
-    QRandomGenerator num = QRandomGenerator(0x1234);
-    index = num.bounded(0,6);
+    int index = QRandomGenerator::global()->bounded(6);
+
     if (index == 0){
         return dmpcY1;
     }else if (index == 1){

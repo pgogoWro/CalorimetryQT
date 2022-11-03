@@ -37,12 +37,12 @@ void LoadDataOfLipids::loadY()
 
 }
 
-QVector<double> &LoadDataOfLipids::getX()
-{
- return x;
-}
+//QVector<double> &LoadDataOfLipids::getX()
+//{
+// return x;
+//}
 
-QVector<double> &LoadDataOfLipids::getY()
-{
- return y;
-}
+//QVector<double> &LoadDataOfLipids::getY()
+//{
+// return y;
+//}
