@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QVector>
-#include "dataoflipids.h"
+#include "dataofdmpc.h"
 #include <QMessageBox>
 
 QT_BEGIN_NAMESPACE

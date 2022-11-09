@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "dataofdmpc.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
 
@@ -36,7 +37,7 @@ void MainWindow::clearDataCurve(){
 }
 
 void MainWindow::addDataVector(){
-    DataOfLipids x,y;
+    DataOfDMPC x,y;
     dmpcX = x.getX();
     dmpcY = y.getY();
 }

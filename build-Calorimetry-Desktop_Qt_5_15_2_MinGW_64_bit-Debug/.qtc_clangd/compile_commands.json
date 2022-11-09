@@ -71,10 +71,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataoflipids.cpp"
+        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpc.cpp"
     ],
     "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataoflipids.cpp"
+    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpc.cpp"
 },
 {
     "arguments": [
@@ -456,10 +456,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataoflipids.h"
+        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpc.h"
     ],
     "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataoflipids.h"
+    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpc.h"
 },
 {
     "arguments": [
