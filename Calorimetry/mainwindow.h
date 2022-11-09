@@ -5,6 +5,7 @@
 #include <QVector>
 #include "dataofdmpc.h"
 #include "dataofdmpg.h"
+#include "dataofdppc.h"
 #include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
@@ -32,5 +33,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
 };
 #endif // MAINWINDOW_H

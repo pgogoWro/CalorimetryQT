@@ -20,17 +20,17 @@
       <x>10</x>
       <y>10</y>
       <width>781</width>
-      <height>341</height>
+      <height>321</height>
      </rect>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>360</y>
+      <x>10</x>
+      <y>340</y>
       <width>194</width>
-      <height>200</height>
+      <height>211</height>
      </rect>
     </property>
     <widget class="QWidget" name="layoutWidget">
@@ -38,15 +38,15 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>174</width>
-       <height>180</height>
+       <width>179</width>
+       <height>196</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_5">
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Konfiguracja pomiarów&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Konfiguracja pomiarów&lt;br/&gt;Configuration of measurements&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -68,7 +68,20 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="startTempSet"/>
+           <widget class="QDoubleSpinBox" name="startTempSet">
+            <property name="decimals">
+             <number>3</number>
+            </property>
+            <property name="minimum">
+             <double>280.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>310.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.015000000000000</double>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -85,7 +98,20 @@
            </widget>
           </item>
           <item>
-           <widget class="QDoubleSpinBox" name="stopTempSet"/>
+           <widget class="QDoubleSpinBox" name="stopTempSet">
+            <property name="decimals">
+             <number>3</number>
+            </property>
+            <property name="minimum">
+             <double>300.000000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>340.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.015000000000000</double>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -159,10 +185,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>360</y>
+      <x>210</x>
+      <y>340</y>
       <width>208</width>
-      <height>197</height>
+      <height>211</height>
      </rect>
     </property>
     <widget class="QWidget" name="layoutWidget">
@@ -171,14 +197,14 @@
        <x>0</x>
        <y>10</y>
        <width>208</width>
-       <height>177</height>
+       <height>193</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
        <widget class="QLabel" name="label_7">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Analiza pomiarów&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Analiza pomiarów&lt;br/&gt;Analysis of measurements&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>

@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "dataofdmpc.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
 
@@ -16,7 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->setInteraction(QCP::iRangeZoom, true);
     ui->plot->addGraph();
 
-    ui->plot->xAxis->setRange(285,315);
+
     ui->plot->yAxis->setRange(-50,200);
 }
 
@@ -41,11 +40,33 @@ void MainWindow::addDataVector(){
         DataOfDMPC x,y;
         vectorX = x.getX();
         vectorY = y.getY();
-    } else if (ui->dmpgButton->isChecked()){
+    }else if (ui->dmpgButton->isChecked()){
         DataOfDMPG x,y;
         vectorX = x.getX();
         vectorY = y.getY();
-    }else{
+    }else if (ui->dppcButton->isChecked()){
+        DataOfDPPC x,y;
+        vectorX = x.getX();
+        vectorY = y.getY();
+    }else if (ui->unknowButton->isChecked()){
+
+        int index = QRandomGenerator::global()->bounded(2);
+
+        if (index == 0){
+            DataOfDPPC x,y;
+            vectorX = x.getX();
+            vectorY = y.getY();
+        }else if (index == 1){
+            DataOfDMPG x,y;
+            vectorX = x.getX();
+            vectorY = y.getY();
+        }else if (index == 2){
+            DataOfDMPC x,y;
+            vectorX = x.getX();
+            vectorY = y.getY();
+        }
+    }
+    else{
         ui->infoBox->setText("Brak wybranego lipidu \n No lipid selected");
     }
 }
@@ -53,6 +74,7 @@ void MainWindow::addDataVector(){
 
 void MainWindow::on_startDrawing_clicked(){
     addDataVector();
+    ui->plot->xAxis->setRange(ui->startTempSet->value(),ui->stopTempSet->value());
     drawingCurve();
 }
 

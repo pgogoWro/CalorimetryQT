@@ -90,13 +90,13 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         plot = new QCustomPlot(centralwidget);
         plot->setObjectName(QString::fromUtf8("plot"));
-        plot->setGeometry(QRect(10, 10, 781, 341));
+        plot->setGeometry(QRect(10, 10, 781, 321));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(20, 360, 194, 200));
+        groupBox->setGeometry(QRect(10, 340, 194, 211));
         layoutWidget = new QWidget(groupBox);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 10, 174, 180));
+        layoutWidget->setGeometry(QRect(10, 10, 179, 196));
         verticalLayout_5 = new QVBoxLayout(layoutWidget);
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         verticalLayout_5->setContentsMargins(0, 0, 0, 0);
@@ -118,6 +118,10 @@ public:
 
         startTempSet = new QDoubleSpinBox(layoutWidget);
         startTempSet->setObjectName(QString::fromUtf8("startTempSet"));
+        startTempSet->setDecimals(3);
+        startTempSet->setMinimum(280.000000000000000);
+        startTempSet->setMaximum(310.000000000000000);
+        startTempSet->setSingleStep(0.015000000000000);
 
         verticalLayout->addWidget(startTempSet);
 
@@ -134,6 +138,10 @@ public:
 
         stopTempSet = new QDoubleSpinBox(layoutWidget);
         stopTempSet->setObjectName(QString::fromUtf8("stopTempSet"));
+        stopTempSet->setDecimals(3);
+        stopTempSet->setMinimum(300.000000000000000);
+        stopTempSet->setMaximum(340.000000000000000);
+        stopTempSet->setSingleStep(0.015000000000000);
 
         verticalLayout_2->addWidget(stopTempSet);
 
@@ -200,10 +208,10 @@ public:
 
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(220, 360, 208, 197));
+        groupBox_2->setGeometry(QRect(210, 340, 208, 211));
         layoutWidget1 = new QWidget(groupBox_2);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(0, 10, 208, 177));
+        layoutWidget1->setGeometry(QRect(0, 10, 208, 193));
         verticalLayout_7 = new QVBoxLayout(layoutWidget1);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         verticalLayout_7->setContentsMargins(0, 0, 0, 0);
@@ -319,7 +327,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700;\">Konfiguracja pomiar\303\263w</span></p></body></html>", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700;\">Konfiguracja pomiar\303\263w<br/>Configuration of measurements</span></p></body></html>", nullptr));
         tempStartSetName->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p align=\"center\">Temperatura<br/> pocz\304\205tkowa</p></body></html>", nullptr));
         tempStopSetName->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Temperatura<br/>ko\305\204cowa</p></body></html>", nullptr));
         dmpcButton->setText(QCoreApplication::translate("MainWindow", "DMPC", nullptr));
@@ -328,7 +336,7 @@ public:
         unknowButton->setText(QCoreApplication::translate("MainWindow", "?", nullptr));
         startDrawing->setText(QCoreApplication::translate("MainWindow", "Draw/Rysuj", nullptr));
         clearCurve->setText(QCoreApplication::translate("MainWindow", "Clear/Wyczy\305\233\304\207", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700;\">Analiza pomiar\303\263w</span></p></body></html>", nullptr));
+        label_7->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700;\">Analiza pomiar\303\263w<br/>Analysis of measurements</span></p></body></html>", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Pocz\304\205tek<br/>piku</p></body></html>", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Koniec<br/>piku</p></body></html>", nullptr));
         label_8->setText(QString());
