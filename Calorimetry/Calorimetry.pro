@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     dataofdmpc.cpp \
+    dataofdmpg.cpp \
     loaddataoflipids.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
 
 HEADERS += \
     dataofdmpc.h \
+    dataofdmpg.h \
     loaddataoflipids.h \
     mainwindow.h \
     qcustomplot.h

@@ -33,7 +33,7 @@
       <height>200</height>
      </rect>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -165,7 +165,7 @@
       <height>197</height>
      </rect>
     </property>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -286,7 +286,7 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
+   <widget class="QTextBrowser" name="infoBox">
     <property name="geometry">
      <rect>
       <x>470</x>

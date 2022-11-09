@@ -36,7 +36,7 @@ public:
     QWidget *centralwidget;
     QCustomPlot *plot;
     QGroupBox *groupBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_5;
     QLabel *label;
     QGridLayout *gridLayout;
@@ -58,7 +58,7 @@ public:
     QPushButton *startDrawing;
     QPushButton *clearCurve;
     QGroupBox *groupBox_2;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QVBoxLayout *verticalLayout_7;
     QLabel *label_7;
     QHBoxLayout *horizontalLayout_7;
@@ -77,7 +77,7 @@ public:
     QLCDNumber *lcdNumber;
     QLCDNumber *lcdNumber_2;
     QLCDNumber *lcdNumber_3;
-    QTextBrowser *textBrowser;
+    QTextBrowser *infoBox;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -94,13 +94,13 @@ public:
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(20, 360, 194, 200));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(10, 10, 174, 180));
-        verticalLayout_5 = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(10, 10, 174, 180));
+        verticalLayout_5 = new QVBoxLayout(layoutWidget);
         verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
         verticalLayout_5->setContentsMargins(0, 0, 0, 0);
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setAlignment(Qt::AlignCenter);
 
@@ -110,13 +110,13 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        tempStartSetName = new QLabel(widget);
+        tempStartSetName = new QLabel(layoutWidget);
         tempStartSetName->setObjectName(QString::fromUtf8("tempStartSetName"));
         tempStartSetName->setAlignment(Qt::AlignCenter);
 
         verticalLayout->addWidget(tempStartSetName);
 
-        startTempSet = new QDoubleSpinBox(widget);
+        startTempSet = new QDoubleSpinBox(layoutWidget);
         startTempSet->setObjectName(QString::fromUtf8("startTempSet"));
 
         verticalLayout->addWidget(startTempSet);
@@ -126,13 +126,13 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        tempStopSetName = new QLabel(widget);
+        tempStopSetName = new QLabel(layoutWidget);
         tempStopSetName->setObjectName(QString::fromUtf8("tempStopSetName"));
         tempStopSetName->setAlignment(Qt::AlignCenter);
 
         verticalLayout_2->addWidget(tempStopSetName);
 
-        stopTempSet = new QDoubleSpinBox(widget);
+        stopTempSet = new QDoubleSpinBox(layoutWidget);
         stopTempSet->setObjectName(QString::fromUtf8("stopTempSet"));
 
         verticalLayout_2->addWidget(stopTempSet);
@@ -146,12 +146,12 @@ public:
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        dmpcButton = new QRadioButton(widget);
+        dmpcButton = new QRadioButton(layoutWidget);
         dmpcButton->setObjectName(QString::fromUtf8("dmpcButton"));
 
         horizontalLayout_3->addWidget(dmpcButton);
 
-        dppcButton = new QRadioButton(widget);
+        dppcButton = new QRadioButton(layoutWidget);
         dppcButton->setObjectName(QString::fromUtf8("dppcButton"));
 
         horizontalLayout_3->addWidget(dppcButton);
@@ -161,12 +161,12 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        dmpgButton = new QRadioButton(widget);
+        dmpgButton = new QRadioButton(layoutWidget);
         dmpgButton->setObjectName(QString::fromUtf8("dmpgButton"));
 
         horizontalLayout_2->addWidget(dmpgButton);
 
-        unknowButton = new QRadioButton(widget);
+        unknowButton = new QRadioButton(layoutWidget);
         unknowButton->setObjectName(QString::fromUtf8("unknowButton"));
 
         horizontalLayout_2->addWidget(unknowButton);
@@ -179,12 +179,12 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        startDrawing = new QPushButton(widget);
+        startDrawing = new QPushButton(layoutWidget);
         startDrawing->setObjectName(QString::fromUtf8("startDrawing"));
 
         horizontalLayout->addWidget(startDrawing);
 
-        clearCurve = new QPushButton(widget);
+        clearCurve = new QPushButton(layoutWidget);
         clearCurve->setObjectName(QString::fromUtf8("clearCurve"));
 
         horizontalLayout->addWidget(clearCurve);
@@ -201,13 +201,13 @@ public:
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
         groupBox_2->setGeometry(QRect(220, 360, 208, 197));
-        widget1 = new QWidget(groupBox_2);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(0, 10, 208, 177));
-        verticalLayout_7 = new QVBoxLayout(widget1);
+        layoutWidget1 = new QWidget(groupBox_2);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(0, 10, 208, 177));
+        verticalLayout_7 = new QVBoxLayout(layoutWidget1);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         verticalLayout_7->setContentsMargins(0, 0, 0, 0);
-        label_7 = new QLabel(widget1);
+        label_7 = new QLabel(layoutWidget1);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setAlignment(Qt::AlignCenter);
 
@@ -215,19 +215,19 @@ public:
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
-        label_5 = new QLabel(widget1);
+        label_5 = new QLabel(layoutWidget1);
         label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_7->addWidget(label_5);
 
-        label_6 = new QLabel(widget1);
+        label_6 = new QLabel(layoutWidget1);
         label_6->setObjectName(QString::fromUtf8("label_6"));
         label_6->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_7->addWidget(label_6);
 
-        label_8 = new QLabel(widget1);
+        label_8 = new QLabel(layoutWidget1);
         label_8->setObjectName(QString::fromUtf8("label_8"));
         label_8->setAlignment(Qt::AlignCenter);
 
@@ -238,17 +238,17 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        spinBox = new QSpinBox(widget1);
+        spinBox = new QSpinBox(layoutWidget1);
         spinBox->setObjectName(QString::fromUtf8("spinBox"));
 
         horizontalLayout_6->addWidget(spinBox);
 
-        spinBox_2 = new QSpinBox(widget1);
+        spinBox_2 = new QSpinBox(layoutWidget1);
         spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
 
         horizontalLayout_6->addWidget(spinBox_2);
 
-        pushButton = new QPushButton(widget1);
+        pushButton = new QPushButton(layoutWidget1);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
 
         horizontalLayout_6->addWidget(pushButton);
@@ -258,19 +258,19 @@ public:
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        label_2 = new QLabel(widget1);
+        label_2 = new QLabel(layoutWidget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setAlignment(Qt::AlignCenter);
 
         horizontalLayout_5->addWidget(label_2);
 
-        label_4 = new QLabel(widget1);
+        label_4 = new QLabel(layoutWidget1);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
 
         horizontalLayout_5->addWidget(label_4);
 
-        label_3 = new QLabel(widget1);
+        label_3 = new QLabel(layoutWidget1);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setAlignment(Qt::AlignCenter);
 
@@ -281,17 +281,17 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        lcdNumber = new QLCDNumber(widget1);
+        lcdNumber = new QLCDNumber(layoutWidget1);
         lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
 
         horizontalLayout_4->addWidget(lcdNumber);
 
-        lcdNumber_2 = new QLCDNumber(widget1);
+        lcdNumber_2 = new QLCDNumber(layoutWidget1);
         lcdNumber_2->setObjectName(QString::fromUtf8("lcdNumber_2"));
 
         horizontalLayout_4->addWidget(lcdNumber_2);
 
-        lcdNumber_3 = new QLCDNumber(widget1);
+        lcdNumber_3 = new QLCDNumber(layoutWidget1);
         lcdNumber_3->setObjectName(QString::fromUtf8("lcdNumber_3"));
 
         horizontalLayout_4->addWidget(lcdNumber_3);
@@ -299,9 +299,9 @@ public:
 
         verticalLayout_7->addLayout(horizontalLayout_4);
 
-        textBrowser = new QTextBrowser(centralwidget);
-        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
-        textBrowser->setGeometry(QRect(470, 370, 256, 181));
+        infoBox = new QTextBrowser(centralwidget);
+        infoBox->setObjectName(QString::fromUtf8("infoBox"));
+        infoBox->setGeometry(QRect(470, 370, 256, 181));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

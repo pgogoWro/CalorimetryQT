@@ -26,20 +26,28 @@ MainWindow::~MainWindow(){
 
 void MainWindow::drawingCurve(){
 
-    ui->plot->graph(0)->setData(dmpcX,dmpcY);
+    ui->plot->graph(0)->setData(vectorX,vectorY);
     ui->plot->replot();
     ui->plot->update();
 }
 
 void MainWindow::clearDataCurve(){
-    dmpcX.clear();
-    dmpcY.clear();
+    vectorX.clear();
+    vectorY.clear();
 }
 
 void MainWindow::addDataVector(){
-    DataOfDMPC x,y;
-    dmpcX = x.getX();
-    dmpcY = y.getY();
+    if(ui->dmpcButton->isChecked()){
+        DataOfDMPC x,y;
+        vectorX = x.getX();
+        vectorY = y.getY();
+    } else if (ui->dmpgButton->isChecked()){
+        DataOfDMPG x,y;
+        vectorX = x.getX();
+        vectorY = y.getY();
+    }else{
+        ui->infoBox->setText("Brak wybranego lipidu \n No lipid selected");
+    }
 }
 
 
