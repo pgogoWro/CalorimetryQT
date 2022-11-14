@@ -9,7 +9,6 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    analysiscurve.cpp \
     dataofdmpc.cpp \
     dataofdmpg.cpp \
     dataofdppc.cpp \
@@ -19,7 +18,6 @@ SOURCES += \
     qcustomplot.cpp
 
 HEADERS += \
-    analysiscurve.h \
     dataofdmpc.h \
     dataofdmpg.h \
     dataofdppc.h \

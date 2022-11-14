@@ -2217,7 +2217,6 @@ release/mainwindow.o: ../Calorimetry/mainwindow.cpp ../Calorimetry/mainwindow.h 
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QRadioButton \
-		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QStatusBar \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QTextBrowser \
 		C:/Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout

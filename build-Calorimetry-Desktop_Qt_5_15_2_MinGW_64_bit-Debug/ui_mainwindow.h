@@ -73,9 +73,9 @@ public:
     QLabel *label_4;
     QLabel *label_3;
     QHBoxLayout *horizontalLayout_4;
-    QLCDNumber *lcdNumber;
+    QLCDNumber *lcdnumber;
     QLCDNumber *lcdNumber_2;
-    QLCDNumber *lcdNumber_3;
+    QLCDNumber *areaUnderCurve;
     QTextBrowser *infoBox;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -296,20 +296,20 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        lcdNumber = new QLCDNumber(layoutWidget1);
-        lcdNumber->setObjectName(QString::fromUtf8("lcdNumber"));
+        lcdnumber = new QLCDNumber(layoutWidget1);
+        lcdnumber->setObjectName(QString::fromUtf8("lcdnumber"));
 
-        horizontalLayout_4->addWidget(lcdNumber);
+        horizontalLayout_4->addWidget(lcdnumber);
 
         lcdNumber_2 = new QLCDNumber(layoutWidget1);
         lcdNumber_2->setObjectName(QString::fromUtf8("lcdNumber_2"));
 
         horizontalLayout_4->addWidget(lcdNumber_2);
 
-        lcdNumber_3 = new QLCDNumber(layoutWidget1);
-        lcdNumber_3->setObjectName(QString::fromUtf8("lcdNumber_3"));
+        areaUnderCurve = new QLCDNumber(layoutWidget1);
+        areaUnderCurve->setObjectName(QString::fromUtf8("areaUnderCurve"));
 
-        horizontalLayout_4->addWidget(lcdNumber_3);
+        horizontalLayout_4->addWidget(areaUnderCurve);
 
 
         verticalLayout_7->addLayout(horizontalLayout_4);

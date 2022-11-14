@@ -23,6 +23,30 @@ MainWindow::~MainWindow(){
     delete ui;
 }
 
+void MainWindow::setNewVectorForAnalysis()
+{
+    for (int i=0; i < vectorX.size(); i++) {
+        if (vectorX[i] == ui->startPik->value()) {
+            start++;
+        }else{
+            break;
+        }
+    }
+    for (int i=0; i < vectorX.size(); i++){
+        if (vectorX[i] != ui->endPik->value()){
+            end++;
+        }else{
+            break;
+        }
+    }
+
+}
+
+void MainWindow::copyThePartOfCurve()
+{
+    QVector <double> copyVectorY(vectorY[start], vectorY[end]) ;
+}
+
 void MainWindow::drawingCurve(){
 
     ui->plot->graph(0)->setData(vectorX,vectorY);
@@ -90,7 +114,12 @@ void MainWindow::on_analysisButton_clicked()
     if(vectorX.size()!=2000 && vectorY.size()!=2000){
         ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
     }else{
-
+        setNewVectorForAnalysis();
+        copyThePartOfCurve();
+        for(int i=0;i<=copyVectorY.size(); i++){
+            areaOfCurve+=copyVectorY[i]*0.015;
+        }
+        ui->areaUnderCurve->display(areaOfCurve);
     }
 }
 

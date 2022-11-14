@@ -325,13 +325,13 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLCDNumber" name="lcdNumber"/>
+         <widget class="QLCDNumber" name="lcdnumber"/>
         </item>
         <item>
          <widget class="QLCDNumber" name="lcdNumber_2"/>
         </item>
         <item>
-         <widget class="QLCDNumber" name="lcdNumber_3"/>
+         <widget class="QLCDNumber" name="areaUnderCurve"/>
         </item>
        </layout>
       </item>
