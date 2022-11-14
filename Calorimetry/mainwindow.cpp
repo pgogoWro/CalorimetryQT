@@ -84,3 +84,13 @@ void MainWindow::on_clearCurve_clicked(){
     drawingCurve();
 }
 
+
+void MainWindow::on_analysisButton_clicked()
+{
+    if(vectorX.size()!=2000 && vectorY.size()!=2000){
+        ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
+    }else{
+
+    }
+}
+

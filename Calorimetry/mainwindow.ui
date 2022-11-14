@@ -196,7 +196,7 @@
       <rect>
        <x>0</x>
        <y>10</y>
-       <width>208</width>
+       <width>211</width>
        <height>193</height>
       </rect>
      </property>
@@ -248,13 +248,39 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_6">
         <item>
-         <widget class="QSpinBox" name="spinBox"/>
+         <widget class="QDoubleSpinBox" name="startPik">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="minimum">
+           <double>290.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>320.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.015000000000000</double>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QSpinBox" name="spinBox_2"/>
+         <widget class="QDoubleSpinBox" name="endPik">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="minimum">
+           <double>300.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>320.000000000000000</double>
+          </property>
+          <property name="singleStep">
+           <double>0.015000000000000</double>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="analysisButton">
           <property name="text">
            <string>Analiza</string>
           </property>

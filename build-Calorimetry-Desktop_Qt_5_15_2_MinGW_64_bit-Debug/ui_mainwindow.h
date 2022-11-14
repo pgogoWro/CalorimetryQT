@@ -21,7 +21,6 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
-#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QVBoxLayout>
@@ -66,9 +65,9 @@ public:
     QLabel *label_6;
     QLabel *label_8;
     QHBoxLayout *horizontalLayout_6;
-    QSpinBox *spinBox;
-    QSpinBox *spinBox_2;
-    QPushButton *pushButton;
+    QDoubleSpinBox *startPik;
+    QDoubleSpinBox *endPik;
+    QPushButton *analysisButton;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_2;
     QLabel *label_4;
@@ -211,7 +210,7 @@ public:
         groupBox_2->setGeometry(QRect(210, 340, 208, 211));
         layoutWidget1 = new QWidget(groupBox_2);
         layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(0, 10, 208, 193));
+        layoutWidget1->setGeometry(QRect(0, 10, 211, 193));
         verticalLayout_7 = new QVBoxLayout(layoutWidget1);
         verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
         verticalLayout_7->setContentsMargins(0, 0, 0, 0);
@@ -246,20 +245,28 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        spinBox = new QSpinBox(layoutWidget1);
-        spinBox->setObjectName(QString::fromUtf8("spinBox"));
+        startPik = new QDoubleSpinBox(layoutWidget1);
+        startPik->setObjectName(QString::fromUtf8("startPik"));
+        startPik->setDecimals(3);
+        startPik->setMinimum(290.000000000000000);
+        startPik->setMaximum(320.000000000000000);
+        startPik->setSingleStep(0.015000000000000);
 
-        horizontalLayout_6->addWidget(spinBox);
+        horizontalLayout_6->addWidget(startPik);
 
-        spinBox_2 = new QSpinBox(layoutWidget1);
-        spinBox_2->setObjectName(QString::fromUtf8("spinBox_2"));
+        endPik = new QDoubleSpinBox(layoutWidget1);
+        endPik->setObjectName(QString::fromUtf8("endPik"));
+        endPik->setDecimals(3);
+        endPik->setMinimum(300.000000000000000);
+        endPik->setMaximum(320.000000000000000);
+        endPik->setSingleStep(0.015000000000000);
 
-        horizontalLayout_6->addWidget(spinBox_2);
+        horizontalLayout_6->addWidget(endPik);
 
-        pushButton = new QPushButton(layoutWidget1);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        analysisButton = new QPushButton(layoutWidget1);
+        analysisButton->setObjectName(QString::fromUtf8("analysisButton"));
 
-        horizontalLayout_6->addWidget(pushButton);
+        horizontalLayout_6->addWidget(analysisButton);
 
 
         verticalLayout_7->addLayout(horizontalLayout_6);
@@ -340,7 +347,7 @@ public:
         label_5->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Pocz\304\205tek<br/>piku</p></body></html>", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Koniec<br/>piku</p></body></html>", nullptr));
         label_8->setText(QString());
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Analiza", nullptr));
+        analysisButton->setText(QCoreApplication::translate("MainWindow", "Analiza", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Temperatura<br/>przej\305\233cia<br/>fazowego [K]</p></body></html>", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Szeroko\305\233\304\207<br/>po\305\202\303\263wkowa</p></body></html>", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Pole<br/>pod<br/>pikiem</p></body></html>", nullptr));

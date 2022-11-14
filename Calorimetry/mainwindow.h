@@ -7,6 +7,7 @@
 #include "dataofdmpg.h"
 #include "dataofdppc.h"
 #include <QMessageBox>
+#include "analysiscurve.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -30,6 +31,8 @@ private slots:
 
 
     void on_clearCurve_clicked();
+
+    void on_analysisButton_clicked();
 
 private:
     Ui::MainWindow *ui;
