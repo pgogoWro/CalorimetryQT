@@ -7,7 +7,7 @@
 #include "dataofdmpg.h"
 #include "dataofdppc.h"
 #include <QMessageBox>
-//#include "analysis.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -25,8 +25,10 @@ public:
     void drawingCurve();
     void clearDataCurve();
     void addDataVector();
-    double getStartPik(); //for get acces to the point of start peak (choose by student)
-    double getEndPik(); // for get acces to the point of end peak (choose by student)
+    QVector <double> & getVectorX();
+    QVector <double> & getVectorY();
+    double getStartPeak(); //for get acces to the point of start peak (choose by student)
+    double getEndPeak(); // for get acces to the point of end peak (choose by student)
     QVector<double> vectorX,vectorY;//vectors to loading data inside mainwindow class
     //QVector <double> copyVectorY; //vector for analysis
 
@@ -37,6 +39,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    double sPeak =0, fPeak = 0;
     double areaUTC = 0; //for analysis area under the curve
 
 };

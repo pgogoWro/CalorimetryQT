@@ -16,6 +16,7 @@ SOURCES += \
     loaddataoflipids.cpp \
     main.cpp \
     mainwindow.cpp \
+    peakcontainer.cpp \
     qcustomplot.cpp
 
 HEADERS += \
@@ -25,6 +26,7 @@ HEADERS += \
     dataofdppc.h \
     loaddataoflipids.h \
     mainwindow.h \
+    peakcontainer.h \
     qcustomplot.h
 
 FORMS += \

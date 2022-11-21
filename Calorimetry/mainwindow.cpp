@@ -2,7 +2,7 @@
 #include "analysis.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
-#include <iostream>
+
 
 
 
@@ -77,22 +77,35 @@ void MainWindow::addDataVector(){
     }
 }
 
-double MainWindow::getStartPik()
+QVector<double> &MainWindow::getVectorX()
 {
-    if(ui->startPik->value() != 0){
-    return ui->startPik->value();
-    }else{
-        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
-    }
+    return vectorX;
 }
 
-double MainWindow::getEndPik()
+QVector<double> &MainWindow::getVectorY()
 {
-    if(ui->endPik->value() != 0){
-    return ui->endPik->value();
+    return vectorY;
+}
+
+
+double MainWindow::getStartPeak()
+{
+    if(ui->startPik->value() != 0){
+    sPeak = ui->startPik->value();
     }else{
         ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
     }
+    return sPeak;
+}
+
+double MainWindow::getEndPeak()
+{
+    if(ui->endPik->value() != 0){
+    fPeak = ui->endPik->value();
+    }else{
+        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+    }
+    return fPeak;
 }
 
 
@@ -111,15 +124,17 @@ void MainWindow::on_clearCurve_clicked(){
 
 void MainWindow::on_analysisButton_clicked()
 {
+    getStartPeak();
+    getEndPeak();
     if(vectorX.size()!=2000 && vectorY.size()!=2000){
         ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
     }else{
     Analysis dataForAnalysis;
-    areaUTC = dataForAnalysis.getValueAreaUTC();
-    std::cout<<areaUTC;
-//    QString value = QString::number(areaUTC);
-//    ui->textBrowser->setText(value);
-//    ui->areaUnderCurve->display(areaUTC);
+    areaUTC = dataForAnalysis.getValueAreaUTC(sPeak, fPeak);
+
+    QString value = QString::number(areaUTC);
+    ui->textBrowser->setText(value);
+    ui->areaUnderCurve->display(areaUTC);
     }
 }
 

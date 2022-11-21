@@ -1,10 +1,9 @@
 #include "analysis.h"
-#include "ui_mainwindow.h"
+#include "mainwindow.h"
 
 Analysis::Analysis()
 {
-    start = getStartPik();
-    end = getEndPik();
+
 }
 
 Analysis::~Analysis()
@@ -13,12 +12,16 @@ Analysis::~Analysis()
 }
 
 
-void Analysis::setNewVectorForAnalysis()
+void Analysis::setNewVectorForAnalysis(const double start, const double end)
 {
+    MainWindow peak;
+    vectorX = peak.vectorX;
+    vectorY = peak.vectorY;
     for (int i=0; i < vectorX.size(); i++) {
         if (vectorX[i] != start) {
             stIndex++;
         }else{
+            sIndex = stIndex;
             break;
         }
     }
@@ -26,6 +29,7 @@ void Analysis::setNewVectorForAnalysis()
         if (vectorX[i] != end){
             enIndex++;
         }else{
+            fIndex = enIndex;
             break;
         }
     }
@@ -33,18 +37,18 @@ void Analysis::setNewVectorForAnalysis()
 
 
 
-void Analysis::areaUnderTheCurve()
+void Analysis::areaUnderTheCurve(const double start, const double end)
 {
-        setNewVectorForAnalysis();
+        setNewVectorForAnalysis(start, end);
 
-        for(int i=stIndex;i<=enIndex; i++){
+        for(int i=sIndex;i<fIndex; i++){
             valueAreaUnderTheCurve+=vectorY[i]*0.015;
         }
 }
 
-double Analysis::getValueAreaUTC()
+double Analysis::getValueAreaUTC(const double start, const double end)
 {
-    areaUnderTheCurve();
+    areaUnderTheCurve(start, end);
     return valueAreaUnderTheCurve;
 }
 

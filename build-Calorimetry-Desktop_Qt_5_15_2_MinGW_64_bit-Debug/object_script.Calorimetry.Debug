@@ -5,6 +5,7 @@ debug/dataofdppc.o
 debug/loaddataoflipids.o
 debug/main.o
 debug/mainwindow.o
+debug/peakcontainer.o
 debug/qcustomplot.o
 debug/moc_mainwindow.o
 debug/moc_qcustomplot.o
