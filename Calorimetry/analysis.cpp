@@ -17,36 +17,34 @@ void Analysis::setNewVectorForAnalysis()
 {
     for (int i=0; i < vectorX.size(); i++) {
         if (vectorX[i] != start) {
-            start++;
+            stIndex++;
         }else{
             break;
         }
     }
     for (int i=0; i < vectorX.size(); i++){
         if (vectorX[i] != end){
-            end++;
+            enIndex++;
         }else{
             break;
         }
     }
 }
 
-void Analysis::copyThePartOfCurve()
-{
-    QVector <double> copyVectorY(vectorY[start], vectorY[end]);
-}
+
 
 void Analysis::areaUnderTheCurve()
 {
         setNewVectorForAnalysis();
-        copyThePartOfCurve();
-        for(int i=0;i<=copyVectorY.size(); i++){
-            valueAreaUnderTheCurve+=copyVectorY[i]*0.015;
+
+        for(int i=stIndex;i<=enIndex; i++){
+            valueAreaUnderTheCurve+=vectorY[i]*0.015;
         }
 }
 
 double Analysis::getValueAreaUTC()
 {
+    areaUnderTheCurve();
     return valueAreaUnderTheCurve;
 }
 

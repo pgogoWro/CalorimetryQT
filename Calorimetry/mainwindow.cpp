@@ -2,6 +2,7 @@
 #include "analysis.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
+#include <iostream>
 
 
 
@@ -115,8 +116,10 @@ void MainWindow::on_analysisButton_clicked()
     }else{
     Analysis dataForAnalysis;
     areaUTC = dataForAnalysis.getValueAreaUTC();
-    QString value = QString::number(areaUTC);
-    ui->textBrowser->setText(value);
+    std::cout<<areaUTC;
+//    QString value = QString::number(areaUTC);
+//    ui->textBrowser->setText(value);
+//    ui->areaUnderCurve->display(areaUTC);
     }
 }
 
