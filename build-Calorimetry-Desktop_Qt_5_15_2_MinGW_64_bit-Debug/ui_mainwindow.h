@@ -77,6 +77,7 @@ public:
     QLCDNumber *lcdNumber_2;
     QLCDNumber *areaUnderCurve;
     QTextBrowser *infoBox;
+    QTextBrowser *textBrowser;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -317,6 +318,9 @@ public:
         infoBox = new QTextBrowser(centralwidget);
         infoBox->setObjectName(QString::fromUtf8("infoBox"));
         infoBox->setGeometry(QRect(470, 370, 256, 181));
+        textBrowser = new QTextBrowser(centralwidget);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setGeometry(QRect(430, 340, 61, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));

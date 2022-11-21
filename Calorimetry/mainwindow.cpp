@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "analysis.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
 
@@ -23,29 +24,9 @@ MainWindow::~MainWindow(){
     delete ui;
 }
 
-void MainWindow::setNewVectorForAnalysis()
-{
-    for (int i=0; i < vectorX.size(); i++) {
-        if (vectorX[i] == ui->startPik->value()) {
-            start++;
-        }else{
-            break;
-        }
-    }
-    for (int i=0; i < vectorX.size(); i++){
-        if (vectorX[i] != ui->endPik->value()){
-            end++;
-        }else{
-            break;
-        }
-    }
 
-}
 
-void MainWindow::copyThePartOfCurve()
-{
-    QVector <double> copyVectorY(vectorY[start], vectorY[end]) ;
-}
+
 
 void MainWindow::drawingCurve(){
 
@@ -95,6 +76,24 @@ void MainWindow::addDataVector(){
     }
 }
 
+double MainWindow::getStartPik()
+{
+    if(ui->startPik->value() != 0){
+    return ui->startPik->value();
+    }else{
+        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+    }
+}
+
+double MainWindow::getEndPik()
+{
+    if(ui->endPik->value() != 0){
+    return ui->endPik->value();
+    }else{
+        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+    }
+}
+
 
 void MainWindow::on_startDrawing_clicked(){
     addDataVector();
@@ -114,12 +113,10 @@ void MainWindow::on_analysisButton_clicked()
     if(vectorX.size()!=2000 && vectorY.size()!=2000){
         ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
     }else{
-        setNewVectorForAnalysis();
-        copyThePartOfCurve();
-        for(int i=0;i<=copyVectorY.size(); i++){
-            areaOfCurve+=copyVectorY[i]*0.015;
-        }
-        ui->areaUnderCurve->display(areaOfCurve);
+    Analysis dataForAnalysis;
+    areaUTC = dataForAnalysis.getValueAreaUTC();
+    QString value = QString::number(areaUTC);
+    ui->textBrowser->setText(value);
     }
 }
 
