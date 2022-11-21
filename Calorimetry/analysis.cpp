@@ -12,11 +12,13 @@ Analysis::~Analysis()
 }
 
 
-void Analysis::setNewVectorForAnalysis(const double start, const double end)
+void Analysis::setNewVectorForAnalysis()
 {
     MainWindow peak;
     vectorX = peak.vectorX;
     vectorY = peak.vectorY;
+    start = peak.getStartPeak();
+    end = peak.getEndPeak();
     for (int i=0; i < vectorX.size(); i++) {
         if (vectorX[i] != start) {
             stIndex++;
@@ -37,18 +39,18 @@ void Analysis::setNewVectorForAnalysis(const double start, const double end)
 
 
 
-void Analysis::areaUnderTheCurve(const double start, const double end)
+void Analysis::areaUnderTheCurve()
 {
-        setNewVectorForAnalysis(start, end);
+        setNewVectorForAnalysis();
 
         for(int i=sIndex;i<fIndex; i++){
             valueAreaUnderTheCurve+=vectorY[i]*0.015;
         }
 }
 
-double Analysis::getValueAreaUTC(const double start, const double end)
+double Analysis::getValueAreaUTC()
 {
-    areaUnderTheCurve(start, end);
+    areaUnderTheCurve();
     return valueAreaUnderTheCurve;
 }
 

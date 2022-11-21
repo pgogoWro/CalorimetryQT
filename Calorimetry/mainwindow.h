@@ -7,6 +7,7 @@
 #include "dataofdmpg.h"
 #include "dataofdppc.h"
 #include <QMessageBox>
+#include <QDebug>
 
 
 QT_BEGIN_NAMESPACE

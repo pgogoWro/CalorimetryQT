@@ -2,6 +2,7 @@
 #include "analysis.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
+#include <iostream>
 
 
 
@@ -124,15 +125,14 @@ void MainWindow::on_clearCurve_clicked(){
 
 void MainWindow::on_analysisButton_clicked()
 {
-    getStartPeak();
-    getEndPeak();
     if(vectorX.size()!=2000 && vectorY.size()!=2000){
         ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
     }else{
     Analysis dataForAnalysis;
-    areaUTC = dataForAnalysis.getValueAreaUTC(sPeak, fPeak);
-
+    areaUTC = dataForAnalysis.getValueAreaUTC();
+    std::cout<<areaUTC;
     QString value = QString::number(areaUTC);
+    qDebug()<<areaUTC;
     ui->textBrowser->setText(value);
     ui->areaUnderCurve->display(areaUTC);
     }

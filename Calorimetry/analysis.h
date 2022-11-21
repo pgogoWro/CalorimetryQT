@@ -19,9 +19,9 @@ private:
 public:
     Analysis();
     ~Analysis();
-    void setNewVectorForAnalysis(const double start, const double end);
-    void areaUnderTheCurve(const double start, const double end);
-    double getValueAreaUTC(const double start, const double end);
+    void setNewVectorForAnalysis();
+    void areaUnderTheCurve();
+    double getValueAreaUTC();
 };
 
 #endif // ANALYSIS_H
