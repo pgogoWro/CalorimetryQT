@@ -42,7 +42,7 @@ void MainWindow::clearDataCurve(){
     vectorY.clear();
 }
 
-void MainWindow::addDataVector(){
+void MainWindow::addDataVector(){//working method
     if(ui->dmpcButton->isChecked()){
         DataOfDMPC x,y;
         vectorX = x.getX();
@@ -78,63 +78,74 @@ void MainWindow::addDataVector(){
     }
 }
 
-QVector<double> &MainWindow::getVectorX()
+QVector<double> &MainWindow::getVectorX() //chyba nie dziala ten getter, jest uzywany w klasie analiza, chociaz vectorX jest poprawny
 {
     return vectorX;
 }
 
-QVector<double> &MainWindow::getVectorY()
+QVector<double> &MainWindow::getVectorY() //chyba nie dziala ten getter, jest uzywany w klasie analiza, chociaz vectorY jest poprawny
 {
     return vectorY;
 }
 
 
-double MainWindow::getStartPeak()
-{
+double MainWindow::getStartPeak(){//working method
     if(ui->startPik->value() != 0){
     sPeak = ui->startPik->value();
     }else{
         ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
     }
-    return sPeak;
+     // qDebug()<<sPeak; working
+    return sPeak; // start peak choosen by student
 }
 
-double MainWindow::getEndPeak()
-{
+double MainWindow::getEndPeak(){//working method
     if(ui->endPik->value() != 0){
     fPeak = ui->endPik->value();
     }else{
         ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
     }
-    return fPeak;
+     // qDebug()<<fPeak; working
+    return fPeak; // end peak choosen by student
 }
 
 
-void MainWindow::on_startDrawing_clicked(){
-    addDataVector();
+void MainWindow::on_startDrawing_clicked(){ //working method
+    addDataVector(); //add random vector to the graph
+     // qDebug()<<vectorX; working
+     // qDebug()<<vectorY; working
     ui->plot->xAxis->setRange(ui->startTempSet->value(),ui->stopTempSet->value());
     drawingCurve();
 }
 
 
-void MainWindow::on_clearCurve_clicked(){
+void MainWindow::on_clearCurve_clicked(){//working method
     clearDataCurve();
     drawingCurve();
 }
 
 
-void MainWindow::on_analysisButton_clicked()
-{
+void MainWindow::on_analysisButton_clicked(){//not working method
+
+        getStartPeak();
+        getEndPeak();
+        getVectorX();
+        getVectorY();
+
+        qDebug()<<sPeak;
+        qDebug()<<fPeak;
+        //qDebug()<<vectorX; // vectorXi vectorY istnieja lecz nie sa przesylane do analizy
+
     if(vectorX.size()!=2000 && vectorY.size()!=2000){
         ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
     }else{
     Analysis dataForAnalysis;
     areaUTC = dataForAnalysis.getValueAreaUTC();
-    std::cout<<areaUTC;
-    QString value = QString::number(areaUTC);
-    qDebug()<<areaUTC;
-    ui->textBrowser->setText(value);
-    ui->areaUnderCurve->display(areaUTC);
+
+//    QString value = QString::number(areaUTC);
+//    qDebug()<<areaUTC;
+//    ui->textBrowser->setText(value);
+//    ui->areaUnderCurve->display(areaUTC);
     }
 }
 

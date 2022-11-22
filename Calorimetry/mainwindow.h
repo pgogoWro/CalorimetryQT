@@ -21,17 +21,14 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    //void setNewVectorForAnalysis();
-    //void copyThePartOfCurve();
     void drawingCurve();
     void clearDataCurve();
     void addDataVector();
-    QVector <double> & getVectorX();
+    QVector <double> & getVectorX(); //getter do dostepu do vectorX i poniezej vectorY
     QVector <double> & getVectorY();
     double getStartPeak(); //for get acces to the point of start peak (choose by student)
     double getEndPeak(); // for get acces to the point of end peak (choose by student)
-    QVector<double> vectorX,vectorY;//vectors to loading data inside mainwindow class
-    //QVector <double> copyVectorY; //vector for analysis
+
 
 private slots:
     void on_startDrawing_clicked();
@@ -40,7 +37,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    double sPeak =0, fPeak = 0;
+    QVector<double> vectorX,vectorY;//vectors to loading data inside mainwindow class
+    double sPeak =0.0, fPeak = 0.0;
     double areaUTC = 0; //for analysis area under the curve
 
 };

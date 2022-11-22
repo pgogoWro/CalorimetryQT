@@ -5,7 +5,6 @@ release/dataofdppc.o
 release/loaddataoflipids.o
 release/main.o
 release/mainwindow.o
-release/peakcontainer.o
 release/qcustomplot.o
 release/moc_mainwindow.o
 release/moc_qcustomplot.o
