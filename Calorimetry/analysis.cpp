@@ -3,6 +3,15 @@
 
 Analysis::Analysis()
 {
+    MainWindow peak;
+
+    vecX = peak.getVectorX(); //not working pobieranie vectorX za pomoca gettera, nie dziala
+    vecY = peak.getVectorY(); //not working pobieranie vectorY za pomoca gettera, nie dziala
+    start = peak.getStartPeak(); //not working
+    end = peak.getEndPeak(); //not working
+    qDebug()<<"wartosc start"<<start;
+    qDebug()<<"wartosc end"<<end;
+//  qDebug()<<vecY;
 
 }
 
@@ -14,11 +23,7 @@ Analysis::~Analysis()
 
 void Analysis::setNewVectorForAnalysis()//not working
 {
-    MainWindow peak;
-    vecX = peak.getVectorX(); //not working pobieranie vectorX za pomoca gettera, nie dziala
-    vecY = peak.getVectorY(); //not working pobieranie vectorY za pomoca gettera, nie dziala
-    start = peak.getStartPeak(); //working
-    end = peak.getEndPeak(); //working
+
     for (int i=0; i < vecX.size(); i++) {
         if (vecX[i] != start) {
             stIndex++;
@@ -35,14 +40,13 @@ void Analysis::setNewVectorForAnalysis()//not working
             break;
         }
     }
-    qDebug()<<"wektorX z gettera"<<peak.getVectorX(); // wyswietlalem wartosci na konsoli tu brak
-    qDebug()<<"WektorY z gettera"<<peak.getVectorY(); // tu brak vectora
-    qDebug()<<"poczatek piku wartosc"<<start; // poprawna wpisana wybrana przez studenta
-    qDebug()<<"koniec piku wartosc"<<end; // poprawna wpisana wybrana przez studenta
-    qDebug()<<"wektorX w analizie"<<vecX; // tu brak vectora
-    qDebug()<<"WektorY w analizie"<<vecY; // tu brak vectora
-    qDebug()<<"poczatek piku indeks"<<stIndex; // tu brak
-    qDebug()<<"koniec piku indeks"<<fIndex; // tu brak
+
+//    qDebug()<<"poczatek piku wartosc"<<start; // poprawna wpisana wybrana przez studenta
+//    qDebug()<<"koniec piku wartosc"<<end; // poprawna wpisana wybrana przez studenta
+//    qDebug()<<"wektorX w analizie"<<vecX; // tu brak vectora
+//    qDebug()<<"WektorY w analizie"<<vecY; // tu brak vectora
+//    qDebug()<<"poczatek piku indeks"<<stIndex; // tu brak
+//    qDebug()<<"koniec piku indeks"<<fIndex; // tu brak
 }
 
 

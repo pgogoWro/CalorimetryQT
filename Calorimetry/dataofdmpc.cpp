@@ -7,7 +7,7 @@ DataOfDMPC::DataOfDMPC()
 
 QVector<double> &DataOfDMPC::getX()
 {
-    return dmpcX;
+    return this->dmpcX;
 }
 
 QVector<double> &DataOfDMPC::getY()
@@ -15,7 +15,7 @@ QVector<double> &DataOfDMPC::getY()
     int index = QRandomGenerator::global()->bounded(19);
 
     if (index == 0){
-        return dmpcY1;
+        return this->dmpcY1;
     }else if (index == 1){
         return dmpcY2;
     }else if (index == 2){
