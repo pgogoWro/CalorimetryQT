@@ -1,4 +1,4 @@
-debug/analysis.o
+debug/analysiswindow.o
 debug/dataofdmpc.o
 debug/dataofdmpg.o
 debug/dataofdppc.o
@@ -6,5 +6,6 @@ debug/loaddataoflipids.o
 debug/main.o
 debug/mainwindow.o
 debug/qcustomplot.o
+debug/moc_analysiswindow.o
 debug/moc_mainwindow.o
 debug/moc_qcustomplot.o

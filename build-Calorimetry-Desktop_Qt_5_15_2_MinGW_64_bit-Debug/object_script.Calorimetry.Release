@@ -1,4 +1,4 @@
-release/analysis.o
+release/analysiswindow.o
 release/dataofdmpc.o
 release/dataofdmpg.o
 release/dataofdppc.o
@@ -6,5 +6,6 @@ release/loaddataoflipids.o
 release/main.o
 release/mainwindow.o
 release/qcustomplot.o
+release/moc_analysiswindow.o
 release/moc_mainwindow.o
 release/moc_qcustomplot.o

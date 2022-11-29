@@ -35,7 +35,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -49,9 +49,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -71,10 +71,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\analysis.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\analysiswindow.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/analysis.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/analysiswindow.cpp"
 },
 {
     "arguments": [
@@ -112,7 +112,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -126,9 +126,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -148,10 +148,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpc.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdmpc.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpc.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdmpc.cpp"
 },
 {
     "arguments": [
@@ -189,7 +189,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -203,9 +203,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -225,10 +225,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpg.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdmpg.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpg.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdmpg.cpp"
 },
 {
     "arguments": [
@@ -266,7 +266,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -280,9 +280,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -302,10 +302,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdppc.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdppc.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdppc.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdppc.cpp"
 },
 {
     "arguments": [
@@ -343,7 +343,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -357,9 +357,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -379,10 +379,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\loaddataoflipids.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\loaddataoflipids.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/loaddataoflipids.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/loaddataoflipids.cpp"
 },
 {
     "arguments": [
@@ -420,7 +420,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -434,9 +434,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -456,10 +456,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\main.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\main.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/main.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/main.cpp"
 },
 {
     "arguments": [
@@ -497,7 +497,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -511,9 +511,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -533,10 +533,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\mainwindow.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\mainwindow.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/mainwindow.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -574,7 +574,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -588,9 +588,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -610,10 +610,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\qcustomplot.cpp"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\qcustomplot.cpp"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/qcustomplot.cpp"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/qcustomplot.cpp"
 },
 {
     "arguments": [
@@ -651,7 +651,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -665,9 +665,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -687,10 +687,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\analysis.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\analysiswindow.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/analysis.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/analysiswindow.h"
 },
 {
     "arguments": [
@@ -728,7 +728,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -742,9 +742,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -764,10 +764,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpc.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdmpc.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpc.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdmpc.h"
 },
 {
     "arguments": [
@@ -805,7 +805,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -819,9 +819,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -841,10 +841,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdmpg.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdmpg.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdmpg.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdmpg.h"
 },
 {
     "arguments": [
@@ -882,7 +882,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -896,9 +896,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -918,10 +918,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\dataofdppc.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\dataofdppc.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/dataofdppc.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/dataofdppc.h"
 },
 {
     "arguments": [
@@ -959,7 +959,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -973,9 +973,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -995,10 +995,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\loaddataoflipids.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\loaddataoflipids.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/loaddataoflipids.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/loaddataoflipids.h"
 },
 {
     "arguments": [
@@ -1036,7 +1036,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -1050,9 +1050,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -1072,10 +1072,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\mainwindow.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\mainwindow.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/mainwindow.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/mainwindow.h"
 },
 {
     "arguments": [
@@ -1113,7 +1113,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -1127,9 +1127,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -1149,10 +1149,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry\\qcustomplot.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry\\qcustomplot.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/Calorimetry/qcustomplot.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/Calorimetry/qcustomplot.h"
 },
 {
     "arguments": [
@@ -1190,7 +1190,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\Calorimetry",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include",
         "-I",
@@ -1204,9 +1204,9 @@
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -1226,9 +1226,86 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "E:\\Repos\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
-    "directory": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "E:/Repos/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/ui_mainwindow.h"
+},
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-std=gnu++1z",
+        "-Wall",
+        "-Wextra",
+        "-Wextra",
+        "-fexceptions",
+        "-mthreads",
+        "-fsyntax-only",
+        "-m64",
+        "--target=x86_64-w64-mingw32",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-DMINGW_HAS_SECURE_API",
+        "-DQT_QML_DEBUG",
+        "-DQT_PRINTSUPPORT_LIB",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DQT_NEEDS_QMAIN",
+        "-DQ_CREATOR_RUN",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedMingwHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders",
+        "-I",
+        "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
+        "-I",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\Calorimetry",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtPrintSupport",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtWidgets",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtGui",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtANGLE",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\include\\QtCore",
+        "-I",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\debug",
+        "-I",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug",
+        "-I",
+        "C:\\Qt\\5.15.2\\mingw81_64\\mkspecs\\win32-g++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw810_64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw810_64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\x86_64-w64-mingw32",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw810_64\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++\\backward",
+        "-isystem",
+        "C:\\Qt\\Tools\\QtCreator\\bin\\clang\\lib\\clang\\14.0.3\\include",
+        "-isystem",
+        "C:\\Qt\\Tools\\mingw810_64\\x86_64-w64-mingw32\\include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++-header",
+        "E:\\Repos\\CalorimetryQT\\CalorimetryQT\\build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug\\ui_analysiswindow.h"
+    ],
+    "directory": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "E:/Repos/CalorimetryQT/CalorimetryQT/build-Calorimetry-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/ui_analysiswindow.h"
 }
 ]

@@ -15,7 +15,6 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -56,26 +55,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QPushButton *startDrawing;
     QPushButton *clearCurve;
-    QGroupBox *groupBox_2;
-    QWidget *layoutWidget1;
-    QVBoxLayout *verticalLayout_7;
-    QLabel *label_7;
-    QHBoxLayout *horizontalLayout_7;
-    QLabel *label_5;
-    QLabel *label_6;
-    QLabel *label_8;
-    QHBoxLayout *horizontalLayout_6;
-    QDoubleSpinBox *startPik;
-    QDoubleSpinBox *endPik;
-    QPushButton *analysisButton;
-    QHBoxLayout *horizontalLayout_5;
-    QLabel *label_2;
-    QLabel *label_4;
-    QLabel *label_3;
-    QHBoxLayout *horizontalLayout_4;
-    QLCDNumber *lcdnumber;
-    QLCDNumber *lcdNumber_2;
-    QLCDNumber *areaUnderCurve;
     QTextBrowser *infoBox;
     QTextBrowser *textBrowser;
     QMenuBar *menubar;
@@ -206,115 +185,6 @@ public:
 
         verticalLayout_5->addLayout(gridLayout);
 
-        groupBox_2 = new QGroupBox(centralwidget);
-        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(210, 340, 208, 211));
-        layoutWidget1 = new QWidget(groupBox_2);
-        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
-        layoutWidget1->setGeometry(QRect(0, 10, 211, 193));
-        verticalLayout_7 = new QVBoxLayout(layoutWidget1);
-        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
-        verticalLayout_7->setContentsMargins(0, 0, 0, 0);
-        label_7 = new QLabel(layoutWidget1);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setAlignment(Qt::AlignCenter);
-
-        verticalLayout_7->addWidget(label_7);
-
-        horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
-        label_5 = new QLabel(layoutWidget1);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_7->addWidget(label_5);
-
-        label_6 = new QLabel(layoutWidget1);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_7->addWidget(label_6);
-
-        label_8 = new QLabel(layoutWidget1);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_7->addWidget(label_8);
-
-
-        verticalLayout_7->addLayout(horizontalLayout_7);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        startPik = new QDoubleSpinBox(layoutWidget1);
-        startPik->setObjectName(QString::fromUtf8("startPik"));
-        startPik->setDecimals(3);
-        startPik->setMinimum(290.000000000000000);
-        startPik->setMaximum(320.000000000000000);
-        startPik->setSingleStep(0.015000000000000);
-
-        horizontalLayout_6->addWidget(startPik);
-
-        endPik = new QDoubleSpinBox(layoutWidget1);
-        endPik->setObjectName(QString::fromUtf8("endPik"));
-        endPik->setDecimals(3);
-        endPik->setMinimum(300.000000000000000);
-        endPik->setMaximum(320.000000000000000);
-        endPik->setSingleStep(0.015000000000000);
-
-        horizontalLayout_6->addWidget(endPik);
-
-        analysisButton = new QPushButton(layoutWidget1);
-        analysisButton->setObjectName(QString::fromUtf8("analysisButton"));
-
-        horizontalLayout_6->addWidget(analysisButton);
-
-
-        verticalLayout_7->addLayout(horizontalLayout_6);
-
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
-        label_2 = new QLabel(layoutWidget1);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_5->addWidget(label_2);
-
-        label_4 = new QLabel(layoutWidget1);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
-
-        horizontalLayout_5->addWidget(label_4);
-
-        label_3 = new QLabel(layoutWidget1);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setAlignment(Qt::AlignCenter);
-
-        horizontalLayout_5->addWidget(label_3);
-
-
-        verticalLayout_7->addLayout(horizontalLayout_5);
-
-        horizontalLayout_4 = new QHBoxLayout();
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
-        lcdnumber = new QLCDNumber(layoutWidget1);
-        lcdnumber->setObjectName(QString::fromUtf8("lcdnumber"));
-
-        horizontalLayout_4->addWidget(lcdnumber);
-
-        lcdNumber_2 = new QLCDNumber(layoutWidget1);
-        lcdNumber_2->setObjectName(QString::fromUtf8("lcdNumber_2"));
-
-        horizontalLayout_4->addWidget(lcdNumber_2);
-
-        areaUnderCurve = new QLCDNumber(layoutWidget1);
-        areaUnderCurve->setObjectName(QString::fromUtf8("areaUnderCurve"));
-
-        horizontalLayout_4->addWidget(areaUnderCurve);
-
-
-        verticalLayout_7->addLayout(horizontalLayout_4);
-
         infoBox = new QTextBrowser(centralwidget);
         infoBox->setObjectName(QString::fromUtf8("infoBox"));
         infoBox->setGeometry(QRect(470, 370, 256, 181));
@@ -347,14 +217,6 @@ public:
         unknowButton->setText(QCoreApplication::translate("MainWindow", "?", nullptr));
         startDrawing->setText(QCoreApplication::translate("MainWindow", "Draw/Rysuj", nullptr));
         clearCurve->setText(QCoreApplication::translate("MainWindow", "Clear/Wyczy\305\233\304\207", nullptr));
-        label_7->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:700;\">Analiza pomiar\303\263w<br/>Analysis of measurements</span></p></body></html>", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Pocz\304\205tek<br/>piku</p></body></html>", nullptr));
-        label_6->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Koniec<br/>piku</p></body></html>", nullptr));
-        label_8->setText(QString());
-        analysisButton->setText(QCoreApplication::translate("MainWindow", "Analiza", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Temperatura<br/>przej\305\233cia<br/>fazowego [K]</p></body></html>", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Szeroko\305\233\304\207<br/>po\305\202\303\263wkowa</p></body></html>", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p>Pole<br/>pod<br/>pikiem</p></body></html>", nullptr));
     } // retranslateUi
 
 };

@@ -1,5 +1,4 @@
 #include "mainwindow.h"
-#include "analysis.h"
 #include "qcustomplot.h"
 #include "ui_mainwindow.h"
 #include <iostream>
@@ -71,25 +70,25 @@ void MainWindow::addDataVector(){//working method
     }
 }
 
-void MainWindow::setStartPeak() // working
-{
-    if(ui->startPik->value() != 0){
-    sPeak = ui->startPik->value();
-    }else{
-        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
-    }
-   // qDebug()<<*sPeak;
-}
+//void MainWindow::setStartPeak() // working
+//{
+//    if(ui->startPik->value() != 0){
+//    sPeak = ui->startPik->value();
+//    }else{
+//        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+//    }
+//   // qDebug()<<*sPeak;
+//}
 
-void MainWindow::setEndPeak() // working
-{
-    if(ui->endPik->value() != 0){
-    fPeak = ui->endPik->value();
-    }else{
-        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
-    }
-   // qDebug()<<*fPeak;
-}
+//void MainWindow::setEndPeak() // working
+//{
+//    if(ui->endPik->value() != 0){
+//    fPeak = ui->endPik->value();
+//    }else{
+//        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+//    }
+//   // qDebug()<<*fPeak;
+//}
 
 QVector<double> &MainWindow::getVectorX() //didnt working, i cant get vectorX data in analysis class. chyba nie dziala ten getter, jest uzywany w klasie analiza, chociaz vectorX jest poprawny
 {
@@ -131,27 +130,27 @@ void MainWindow::on_clearCurve_clicked(){//working method
 
 
 void MainWindow::on_analysisButton_clicked(){//not working method
-    setStartPeak();
-    setEndPeak();
-        qDebug()<<"wartosc sPeak"<<sPeak;
-        qDebug()<<"wartosc fPeak"<<fPeak;
-        qDebug()<<"wartosc swskPeak"<<*swskPeak;
-        qDebug()<<"wartosc fwskPeak"<<*fwskPeak;
-//        qDebug()<<vectorX; // vectorXi vectorY istnieja lecz nie sa przesylane do analizy
+//    setStartPeak();
+//    setEndPeak();
+//        qDebug()<<"wartosc sPeak"<<sPeak;
+//        qDebug()<<"wartosc fPeak"<<fPeak;
+//        qDebug()<<"wartosc swskPeak"<<*swskPeak;
+//        qDebug()<<"wartosc fwskPeak"<<*fwskPeak;
+////        qDebug()<<vectorX; // vectorXi vectorY istnieja lecz nie sa przesylane do analizy
 
-    setStartPeak();
-    setEndPeak();
+//    setStartPeak();
+//    setEndPeak();
 
-    if(vectorX.size()!=2000 && vectorY.size()!=2000){
-        ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
-    }else{
-    Analysis dataForAnalysis;
-    areaUTC = dataForAnalysis.getValueAreaUTC();
+//    if(vectorX.size()!=2000 && vectorY.size()!=2000){
+//        ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
+//    }else{
+//   /* Analysis dataForAnalysis;
+//    areaUTC = dataForAnalysis.getValueAreaUTC()*/;
 
-//    QString value = QString::number(areaUTC);
-//    qDebug()<<areaUTC;
-//    ui->textBrowser->setText(value);
-//    ui->areaUnderCurve->display(areaUTC);
-    }
+////    QString value = QString::number(areaUTC);
+////    qDebug()<<areaUTC;
+////    ui->textBrowser->setText(value);
+////    ui->areaUnderCurve->display(areaUTC);
+//    }
 }
 
