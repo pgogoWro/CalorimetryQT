@@ -16,20 +16,21 @@ MainWindow::MainWindow(QWidget *parent)
     ui->plot->setInteraction(QCP::iRangeZoom, true);
     ui->plot->addGraph();
     ui->plot->yAxis->setRange(-50,200);
+    connect(ui->plot, SIGNAL(mousePress(QMouseEvent*)), SLOT(clickedGraph(QMouseEvent*)));
 }
 
 MainWindow::~MainWindow(){
     delete ui;
 }
 
-void MainWindow::drawingCurve(){
+void MainWindow::drawingCurve(){//working
 
     ui->plot->graph(0)->setData(vectorX,vectorY);
     ui->plot->replot();
     ui->plot->update();
 }
 
-void MainWindow::clearDataCurve(){
+void MainWindow::clearDataCurve(){//working
     vectorX.clear();
     vectorY.clear();
 }
@@ -70,50 +71,67 @@ void MainWindow::addDataVector(){//working method
     }
 }
 
-//void MainWindow::setStartPeak() // working
-//{
-//    if(ui->startPik->value() != 0){
-//    sPeak = ui->startPik->value();
-//    }else{
-//        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
-//    }
-//   // qDebug()<<*sPeak;
-//}
-
-//void MainWindow::setEndPeak() // working
-//{
-//    if(ui->endPik->value() != 0){
-//    fPeak = ui->endPik->value();
-//    }else{
-//        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
-//    }
-//   // qDebug()<<*fPeak;
-//}
-
-QVector<double> &MainWindow::getVectorX() //didnt working, i cant get vectorX data in analysis class. chyba nie dziala ten getter, jest uzywany w klasie analiza, chociaz vectorX jest poprawny
+void MainWindow::setStartPeak() // working
 {
-    return this->vectorX;
+    if(ui->startPik->value() != 0){
+    sPeak = ui->startPik->value();
+    }else{
+        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+    }
 }
 
-QVector<double> &MainWindow::getVectorY() //^same. chyba nie dziala ten getter, jest uzywany w klasie analiza, chociaz vectorY jest poprawny
+void MainWindow::setEndPeak() // working
 {
-    return this->vectorY;
+    if(ui->endPik->value() != 0){
+    fPeak = ui->endPik->value();
+    }else{
+        ui->infoBox->setText("Brak wpisanej wartości początkowej piku \n No initial peak value was entered");
+    }
 }
 
-
-double &MainWindow::getStartPeak(){//working method
-
-     // qDebug()<<sPeak; working
-    return *swskPeak; // start peak choosen by student
+void MainWindow::getXPositionOfStartPeak()
+{
+   // sPeak = (ui->plot->xAxis->pixelToCoord(point.x()));
 }
 
-double &MainWindow::getEndPeak(){//working method
-
-     // qDebug()<<fPeak; working
-    return *fwskPeak; // end peak choosen by student
+void MainWindow::setNewVectorForAnalysis()
+{
+    for (int i=0; i < vectorX.size(); i++) {
+        if (vectorX[i] != sPeak) {
+            stIndex++;
+        }else{
+            sIndex = stIndex;
+            break;
+        }
+    }
+    for (int i=0; i < vectorX.size(); i++){
+        if (vectorX[i] != fPeak){
+            enIndex++;
+        }else{
+            fIndex = enIndex;
+            break;
+        }
+    }
+    qDebug()<<"wartosc indeksu poczatku piku sIndex"<< sIndex;
+    qDebug()<<"wartosc indeksu poczatku piku stIndex z petli"<< stIndex;
+    qDebug()<<"wartosc indeksu konca piku fIndex"<< fIndex;
+    qDebug()<<"wartosc indeksu konca piku enIndex z petli"<< enIndex;
 }
 
+void MainWindow::areaUnderTheCurve()
+{
+    setNewVectorForAnalysis();
 
+    for(int i=sIndex;i<fIndex; i++){
+        valueAreaUnderTheCurve+=(vectorY[i]*0.015);
+    }
+}
+
+double MainWindow::getValueAreaUTC()
+{
+    areaUnderTheCurve();
+    return valueAreaUnderTheCurve;
+}
 void MainWindow::on_startDrawing_clicked(){ //working method
     addDataVector(); //add random vector to the graph
 
@@ -129,17 +147,6 @@ void MainWindow::on_clearCurve_clicked(){//working method
 }
 
 
-void MainWindow::on_analysisButton_clicked(){//not working method
-//    setStartPeak();
-//    setEndPeak();
-//        qDebug()<<"wartosc sPeak"<<sPeak;
-//        qDebug()<<"wartosc fPeak"<<fPeak;
-//        qDebug()<<"wartosc swskPeak"<<*swskPeak;
-//        qDebug()<<"wartosc fwskPeak"<<*fwskPeak;
-////        qDebug()<<vectorX; // vectorXi vectorY istnieja lecz nie sa przesylane do analizy
-
-//    setStartPeak();
-//    setEndPeak();
 
 //    if(vectorX.size()!=2000 && vectorY.size()!=2000){
 //        ui->infoBox->setText("Przeprowadź konfiguracje pomiarów, a następnie odczytaj początek i koniec piku \n Perform measurement setups and then read peak start and end points");
@@ -151,6 +158,14 @@ void MainWindow::on_analysisButton_clicked(){//not working method
 ////    qDebug()<<areaUTC;
 ////    ui->textBrowser->setText(value);
 ////    ui->areaUnderCurve->display(areaUTC);
-//    }
+
+
+
+
+void MainWindow::on_analysisButton_clicked()
+{
+    setStartPeak();
+    setEndPeak();
+    setNewVectorForAnalysis();
 }
 

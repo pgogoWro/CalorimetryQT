@@ -9,26 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    analysiswindow.cpp \
     dataofdmpc.cpp \
     dataofdmpg.cpp \
     dataofdppc.cpp \
-    loaddataoflipids.cpp \
     main.cpp \
     mainwindow.cpp \
     qcustomplot.cpp
 
 HEADERS += \
-    analysiswindow.h \
     dataofdmpc.h \
     dataofdmpg.h \
     dataofdppc.h \
-    loaddataoflipids.h \
     mainwindow.h \
     qcustomplot.h
 
 FORMS += \
-    analysiswindow.ui \
     mainwindow.ui
 
 # Default rules for deployment.

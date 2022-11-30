@@ -3,6 +3,7 @@
 
 #include <QVector>
 #include <QWidget>
+#include <QDebug>
 
 namespace Ui {
 class AnalysisWindow;
@@ -15,9 +16,13 @@ class AnalysisWindow : public QWidget
 public:
     explicit AnalysisWindow(QWidget *parent = nullptr);
     ~AnalysisWindow();
+    void loadVectorFromMainWindow( QVector <double> p_vectorX, QVector <double> p_VectorY);
     void setNewVectorForAnalysis();
     void areaUnderTheCurve();
     double getValueAreaUTC();
+
+private slots:
+    void on_analysisButton_clicked();
 
 private:
     Ui::AnalysisWindow *ui;

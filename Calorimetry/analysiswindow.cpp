@@ -12,6 +12,17 @@ AnalysisWindow::~AnalysisWindow()
 {
     delete ui;
 }
+
+void AnalysisWindow::loadVectorFromMainWindow(QVector<double> p_vectorX, QVector<double> p_VectorY)
+{
+    this->vecX = p_vectorX;
+    this->vecY = p_VectorY;
+    qDebug()<<"wektor przeslany z main window X"<<vecX;
+    qDebug()<<"wektor przeslany z mainwindow Y"<<vecY;
+//    for (int i =0; i<10; i++){
+//        qDebug()<<vecX[i];
+//    }
+}
 //Analysis::Analysis()
 //{
 //    MainWindow peak;
@@ -71,3 +82,9 @@ double AnalysisWindow::getValueAreaUTC() //didint check
     areaUnderTheCurve();
     return valueAreaUnderTheCurve;
 }
+
+void AnalysisWindow::on_analysisButton_clicked()
+{
+
+}
+

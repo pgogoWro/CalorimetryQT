@@ -28,11 +28,12 @@ public:
     void addDataVector();
     void setStartPeak();
     void setEndPeak();
-    QVector <double> & getVectorX(); //getter do dostepu do vectorX i poniezej vectorY
-    QVector <double> & getVectorY();
-    double &getStartPeak(); //for get acces to the point of start peak (choose by student)
-    double &getEndPeak(); // for get acces to the point of end peak (choose by student)
-
+    void getXPositionOfStartPeak();
+//    QVector <double> & getVectorX(); //getter do dostepu do vectorX i poniezej vectorY
+//    QVector <double> & getVectorY();
+    void setNewVectorForAnalysis();
+    void areaUnderTheCurve();
+    double getValueAreaUTC();
 
 private slots:
     void on_startDrawing_clicked();
@@ -42,12 +43,13 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QVector<double> vectorX,vectorY;//vectors to loading data inside mainwindow class
-    double sPeak = 0;
-    double fPeak = 0;
-    double *swskPeak = &sPeak;
-    double *fwskPeak = &fPeak;
 
-
+    double start , end ; // value for start and end peak, for choose proper vector
+    int stIndex = 0, enIndex = 0;
+    int sIndex = 0, fIndex = 0; // for index new vector, for analysis
+    double valueAreaUnderTheCurve = 0;
+    double sPeak = 0; //for analysis
+    double fPeak = 0; //for analysis
     double areaUTC = 0; //for analysis area under the curve
 
 
